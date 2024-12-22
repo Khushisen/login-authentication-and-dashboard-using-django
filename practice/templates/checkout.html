@@ -1,0 +1,7 @@
+<h2>checkout</h2>
+<p>fill in your details to complete the purchase</p>
+<form method='post'>
+    {% csrf_token %}
+    {% comment %} delivery address, payment details , etc {% endcomment %}
+    <button type="submit">Confirm order</button>
+</form>
