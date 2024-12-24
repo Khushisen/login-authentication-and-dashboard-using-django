@@ -10,12 +10,13 @@
         <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
     <body>
-        <form method="POST" action="{% url 'login' %}">
+        <form style="width:400px" method="POST" action="{% url 'login' %}">
             {% csrf_token %}
             {{form.as_p}}
             <button type="submit">Login </button>
+            <a style="color : black;" href="{% url 'signup' %}">Don't have an account? Sign up</a>
         </form>
-        <a href="{% url 'signup' %}">Don't have an account? Sign up</a>
+        
      
     </body>
 </html>
